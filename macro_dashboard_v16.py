@@ -14,7 +14,7 @@ import pytz
 import time as _time
 
 FRED_API_KEY    = st.secrets.get("FRED_API_KEY", "")
-FINNHUB_API_KEY = st.secrets.get("FINNHUB_API_KEY", "d7irilhr01qn2qav4v80d7irilhr01qn2qav4v8g")
+FINNHUB_API_KEY = st.secrets.get("FINNHUB_API_KEY", "")
 SGT = pytz.timezone("Asia/Singapore")
 def now_sgt(): return datetime.now(SGT)
 
