@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Macro Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/browser@0.63.1/build/style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@stlite/browser@0.63.1/build/stlite.js"></script>
+    <script>
+      stlite.mount({
+        requirements: ["pandas", "plotly"], // Add any other libraries you use here
+        entrypoint: "streamlit_app.py", // Make sure this matches your filename exactly
+        files: {
+          "streamlit_app.py": {
+            url: "https://raw.githubusercontent.com/kwjk8101/macrodashboard/main/streamlit_app.py" 
+          }
+        }
+      }, document.getElementById("root"));
+    </script>
+  </body>
+</html>
